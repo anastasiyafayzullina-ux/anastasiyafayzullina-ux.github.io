@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://anastasiyafayzullina-ux.github.io/sitemap.xml
