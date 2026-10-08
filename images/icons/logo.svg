@@ -1,0 +1,20 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="logo">
+<g clip-path="url(#clip0_0_16)">
+<rect width="30" height="30" rx="15" fill="#D4D6F7"/>
+<g id="Star" filter="url(#filter0_f_0_16)">
+<path d="M15 0L15.6272 9.03287L18.1187 0.327785L16.8541 9.29366L21.101 1.29682L18 9.80385L23.8168 2.86475L19.0148 10.5411L26.1472 4.96304L19.8541 11.4733L27.9904 7.5L20.4813 12.5596L29.2658 10.3647L20.8689 13.7525L29.9178 13.4321L21 15L29.9178 16.5679L20.8689 16.2475L29.2658 19.6353L20.4813 17.4404L27.9904 22.5L19.8541 18.5267L26.1472 25.037L19.0148 19.4589L23.8168 27.1353L18 20.1962L21.101 28.7032L16.8541 20.7063L18.1187 29.6722L15.6272 20.9671L15 30L14.3728 20.9671L11.8813 29.6722L13.1459 20.7063L8.89895 28.7032L12 20.1962L6.18322 27.1353L10.9852 19.4589L3.85283 25.037L10.1459 18.5267L2.00962 22.5L9.51873 17.4404L0.734152 19.6353L9.13111 16.2475L0.0821714 16.5679L9 15L0.0821714 13.4321L9.13111 13.7525L0.734152 10.3647L9.51873 12.5596L2.00962 7.5L10.1459 11.4733L3.85283 4.96304L10.9852 10.5411L6.18322 2.86475L12 9.80385L8.89895 1.29682L13.1459 9.29366L11.8813 0.327785L14.3728 9.03287L15 0Z" fill="#667BCF"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_0_16" x="-1.68253" y="-1.76471" width="33.3651" height="33.5294" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="0.882353" result="effect1_foregroundBlur_0_16"/>
+</filter>
+<clipPath id="clip0_0_16">
+<rect width="30" height="30" rx="15" fill="white"/>
+</clipPath>
+</defs>
+</svg>

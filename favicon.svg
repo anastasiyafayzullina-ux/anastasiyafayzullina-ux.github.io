@@ -1,0 +1,20 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="favicon">
+<g clip-path="url(#clip0_0_4)">
+<rect width="64" height="64" rx="32" fill="#D4D6F7"/>
+<g id="Star" filter="url(#filter0_f_0_4)">
+<path d="M32 0L33.338 19.2701L38.6532 0.699276L35.9554 19.8265L45.0156 2.76654L38.4 20.9149L50.8091 6.11146L40.5649 22.4877L55.7806 10.5878L42.3554 24.4763L59.7128 16L43.6934 26.7938L62.4338 22.1115L44.5203 29.3387L63.8247 28.6551L44.8 32L63.8247 35.3449L44.5203 34.6613L62.4338 41.8885L43.6934 37.2062L59.7128 48L42.3554 39.5237L55.7806 53.4122L40.5649 41.5123L50.8091 57.8885L38.4 43.0851L45.0156 61.2335L35.9554 44.1735L38.6532 63.3007L33.338 44.7299L32 64L30.662 44.7299L25.3468 63.3007L28.0446 44.1735L18.9844 61.2335L25.6 43.0851L13.1909 57.8885L23.4351 41.5123L8.21936 53.4122L21.6446 39.5237L4.28719 48L20.3066 37.2062L1.56619 41.8885L19.4797 34.6613L0.175299 35.3449L19.2 32L0.175299 28.6551L19.4797 29.3387L1.56619 22.1115L20.3066 26.7938L4.28719 16L21.6446 24.4763L8.21936 10.5878L23.4351 22.4877L13.1909 6.11146L25.6 20.9149L18.9844 2.76654L28.0446 19.8265L25.3468 0.699276L30.662 19.2701L32 0Z" fill="#667BCF"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_0_4" x="-3.58941" y="-3.76471" width="71.1788" height="71.5294" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="1.88235" result="effect1_foregroundBlur_0_4"/>
+</filter>
+<clipPath id="clip0_0_4">
+<rect width="64" height="64" rx="32" fill="white"/>
+</clipPath>
+</defs>
+</svg>

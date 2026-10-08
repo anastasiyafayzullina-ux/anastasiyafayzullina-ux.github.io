@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Исследование сервиса Testo — кейс Анастасии Файзуллиной</title>
+<meta name="description" content="Кейс: исследование сервиса Testo — Вебвизор, гипотезы, опрос 28 пользователей, приоритизация доработок с командой разработки и итоговый дизайн." />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="preload" href="/fonts/Involve-Regular.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/Involve-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/source-code-pro-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+<script>document.documentElement.classList.add('js')</script>
+
+  <script type="module" crossorigin src="/assets/main-CgwjezDZ.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-2FtE0w3u.css">
+  <link rel="stylesheet" crossorigin href="/assets/case-BZcaLcrE.css">
+</head>
+<body class="case-page case-page--research">
+  <header class="site-header">
+  <a class="site-header__home" href="/">
+    <img class="site-header__logo" src="/images/icons/logo.svg" width="30" height="30" alt="" />
+    <span class="site-header__home-label">На главную</span>
+  </a>
+  <nav class="site-header__nav" aria-label="Основная навигация">
+    <a class="btn btn--secondary" href="https://t.me/anastasiya_fff" target="_blank" rel="noopener">
+      Telegram
+      <img class="btn__icon" src="/images/icons/arrow-up-right.svg" width="12" height="12" alt="" />
+    </a>
+    <a class="btn btn--primary" href="/resume/">Резюме</a>
+  </nav>
+</header>
+
+
+  <main>
+    <article class="case-sheet">
+      <header class="case-hero case-col">
+        <h1 class="t-36" data-reveal>Исследование сервиса Testo</h1>
+        <p class="case-hero__lead" data-reveal data-reveal-delay="0.1">Изучила поведение пользователей, нашла «боли», сформулировала и&nbsp;проверила несколько гипотез, оценили и&nbsp;приоритизировали доработки с&nbsp;командой разработки и&nbsp;взяли некоторые из&nbsp;них в&nbsp;работу.</p>
+      </header>
+      <div class="case-cover case-wide" data-reveal data-reveal-delay="0.2"><picture><source type="image/avif" srcset="/images/cases/testo-research/cover-800.avif 800w, /images/cases/testo-research/cover-1600.avif 1600w, /images/cases/testo-research/cover-2400.avif 2400w" sizes="(min-width: 1210px) 1130px, calc(100vw - 48px)" /><source type="image/webp" srcset="/images/cases/testo-research/cover-800.webp 800w, /images/cases/testo-research/cover-1600.webp 1600w, /images/cases/testo-research/cover-2400.webp 2400w" sizes="(min-width: 1210px) 1130px, calc(100vw - 48px)" /><img src="/images/cases/testo-research/cover-1600.jpg" srcset="/images/cases/testo-research/cover-800.jpg 800w, /images/cases/testo-research/cover-1600.jpg 1600w, /images/cases/testo-research/cover-2400.jpg 2400w" sizes="(min-width: 1210px) 1130px, calc(100vw - 48px)" width="7680" height="4320" alt="Запись сессии в Вебвизоре и три гипотезы поверх интерфейса Testo" fetchpriority="high" decoding="async" /></picture></div>
+
+      <div class="case-body">
+      <section class="case-section">
+        <h2 class="case-col" data-reveal>О проекте</h2>
+        <div class="case-text case-col" data-reveal>
+          <p>Testo&nbsp;— сервис News Media Holding для&nbsp;создания и&nbsp;публикации интерактивного контента.</p>
+          <p>За&nbsp;2&nbsp;года работы из&nbsp;MVP он&nbsp;вырос в&nbsp;полноценный продукт. Мы&nbsp;реализовали много фич и&nbsp;сильно расширили функционал. И&nbsp;нужно было понять, куда двигаться дальше, найти точки роста.</p>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <h2 class="case-col" data-reveal>Цели</h2>
+        <div class="case-text case-col" data-reveal>
+          <p>Вот что&nbsp;нам хотелось сделать:</p>
+        </div>
+        <div class="panel case-col" data-reveal><div class="terms">
+            <div><p class="term__title">Определить приоритетные функции</p><p class="term__text">Это поможет сфокусировать разработку на&nbsp;наиболее ценных для&nbsp;пользователей функциях</p></div>
+            <div><p class="term__title">Улучшить пользовательский опыт</p><p class="term__text">На&nbsp;основе обратной связи определить возможные проблемы и&nbsp;улучшить взаимодействие с&nbsp;сервисом, повысив скорость и&nbsp;удобство выполнения задач и&nbsp;общую удовлетворённость пользователей</p></div>
+            <div><p class="term__title">Проанализировать поведенческие паттерны</p><p class="term__text">Изучить, как сотрудники используют сервис в&nbsp;повседневной работе, чтобы подстроить логику интерфейса под&nbsp;их&nbsp;реальные задачи</p></div>
+          </div></div>
+      </section>
+
+      <section class="case-section">
+        <h2 class="case-col" data-reveal>План исследования</h2>
+        <div class="case-text case-col" data-reveal>
+          <p>Вся работа была разделена на&nbsp;4&nbsp;этапа.</p>
+        </div>
+        <div class="case-sub">
+          <h3 class="case-col" data-reveal>Этап 1: Подключение Вебвизора</h3>
+          <div class="case-text case-col" data-reveal>
+          <p>Так мы&nbsp;сможем выявить паттерны поведения пользователей, узнать как именно они пользуются сервисом, сколько времени нужно на&nbsp;достижение цели <span class="muted">(цель: публикация интерактива)</span>, где сталкиваются с&nbsp;проблемами и&nbsp;какими элементами интерфейса пользуются, а&nbsp;какими нет.</p>
+        </div>
+        </div>
+        <div class="case-sub">
+          <h3 class="case-col" data-reveal>Этап 2: Формулирование гипотез</h3>
+          <div class="case-text case-col" data-reveal>
+          <p>На&nbsp;основе данных Вебвизора построить гипотезы о&nbsp;том, как можно улучшить пользовательский опыт для&nbsp;более быстрого и&nbsp;удобного достижения цели.</p>
+        </div>
+        </div>
+        <div class="case-sub">
+          <h3 class="case-col" data-reveal>Этап 3: Опрос пользователей</h3>
+          <div class="case-text case-col" data-reveal>
+          <p>Так мы&nbsp;проверим гипотезы. Попросить пользователей рассказать об&nbsp;удобстве, о&nbsp;наиболее используемых функциях, о&nbsp;проблемах при&nbsp;работе в&nbsp;сервисе.</p>
+          <p>А&nbsp;также попросить оценить сервис по&nbsp;5-балльной шкале <span class="muted">(через год/полгода после доработок планируем провести опрос снова)</span>. Эта оценка станет показателем удовлетворенности пользователей, который в&nbsp;будущем мы&nbsp;сможем сравнивать.</p>
+        </div>
+        </div>
+        <div class="case-sub">
+          <h3 class="case-col" data-reveal>Этап 4: Доработки</h3>
+          <div class="case-text case-col" data-reveal>
+          <p>Проанализировать все полученные данные (из&nbsp;опроса и&nbsp;наблюдений Вебвизора) и&nbsp;понять, какие гипотезы подтвердились.</p>
+          <p>Обсудить с&nbsp;командой разработки все идеи и&nbsp;возможности. Провести доработки с&nbsp;учётом ограничения ресурсов разработки.</p>
+        </div>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <h2 class="case-col" data-reveal>Вебвизор</h2>
+        <div class="case-text case-col" data-reveal>
+          <p>Мы&nbsp;отсматривали записанные сессии пользователей. Сначала было не&nbsp;особо понятно, за&nbsp;что&nbsp;цепляться, и&nbsp;мы&nbsp;составили таблицу, в&nbsp;которую заносили важные параметры:</p>
+        </div>
+        <div class="panel case-col" data-reveal><div class="terms">
+            <div><p class="term__title">Порядок заполнения интерактива</p><p class="term__text">Что заполняет сначала: общую информацию или сразу переходит к&nbsp;вопросам</p></div>
+            <div><p class="term__title">Поведение и&nbsp;проблемные места</p><p class="term__text">Загружал ли&nbsp;медиафайлы, пользовался ли&nbsp;предпросмотром, в&nbsp;каких точках случались «затыки» и&nbsp;не&nbsp;получалось пройти дальше по&nbsp;сценарию и&nbsp;так далее</p></div>
+            <div><p class="term__title">Баги в&nbsp;работе сервиса</p><p class="term__text">Различные ошибки или некорректная адаптация на&nbsp;устройство</p></div>
+            <div><p class="term__title">Время</p><p class="term__text">Продолжительность сессии и&nbsp;время, за&nbsp;которое достигалась цель</p></div>
+            <div><p class="term__title">Общая информация</p><p class="term__text">Операционка, тип устройства, браузер</p></div>
+          </div></div>
+        <div class="case-text case-col" data-reveal>
+          <p>После 4–5&nbsp;сессий начали выявляться общие паттерны в&nbsp;поведении пользователей. После 30&nbsp;просмотренных сессий мы&nbsp;выдвинули гипотезы.</p>
+        </div>
+        <div class="panel case-wide" data-reveal><div class="pairs">
+            <div class="pair"><img class="pair__star" src="/images/icons/soft-star.svg" width="20" height="20" alt="" /><p class="pair__title">Наблюдение №1</p><p class="pair__text">Большинство пользователей после загрузки изображений идут в&nbsp;предпросмотр интерактива и&nbsp;проверяют, как «кропнулась» картинка. Если не&nbsp;понравилось&nbsp;— удаляют и&nbsp;загружают картинку заново, обрезая её&nbsp;в&nbsp;сторонних сервисах</p></div>
+            <div class="pair"><img class="pair__star" src="/images/icons/soft-star.svg" width="20" height="20" alt="" /><p class="pair__title">Гипотеза №1</p><p class="pair__text">Если добавим редактор изображений, то&nbsp;скорость работы повысится и&nbsp;работа с&nbsp;изображениями станет удобнее</p></div>
+            <div class="pair"><img class="pair__star" src="/images/icons/soft-star.svg" width="20" height="20" alt="" /><p class="pair__title">Наблюдение №2</p><p class="pair__text">Некоторые пользователи путаются, когда расставляют баллы для&nbsp;диапазонов на&nbsp;вкладке «Результаты»: некоторые баллы принадлежат сразу двум диапазонам, а&nbsp;некоторые не&nbsp;входят ни&nbsp;в&nbsp;один из&nbsp;них</p></div>
+            <div class="pair"><img class="pair__star" src="/images/icons/soft-star.svg" width="20" height="20" alt="" /><p class="pair__title">Гипотеза №2</p><p class="pair__text">Если добавим автозаполнение минимального балла (с&nbsp;возможностью редактирования), то&nbsp;у&nbsp;юзеров будет меньше путаницы</p></div>
+            <div class="pair"><img class="pair__star" src="/images/icons/soft-star.svg" width="20" height="20" alt="" /><p class="pair__title">Наблюдение №3</p><p class="pair__text">Частый сценарий в&nbsp;квизах: при&nbsp;заполнении полей «Подзаголовок» и&nbsp;«Медиа» в&nbsp;промежуточных результатах пользователи используют один и&nbsp;тот же&nbsp;контент. Приходится копировать и&nbsp;вставлять его несколько раз</p></div>
+            <div class="pair"><img class="pair__star" src="/images/icons/soft-star.svg" width="20" height="20" alt="" /><p class="pair__title">Гипотеза №3</p><p class="pair__text">Если мы&nbsp;добавим возможность применять контент полей «Подзаголовок» и&nbsp;«Медиа» ко&nbsp;всем промежуточным результатам, то&nbsp;уменьшится время на&nbsp;заполнение квиза контентом</p></div>
+          </div></div>
+      </section>
+
+      <section class="case-section">
+        <h2 class="case-col" data-reveal>Опрос</h2>
+        <div class="case-text case-col" data-reveal>
+          <p>Он&nbsp;состоит из&nbsp;15&nbsp;вопросов, и&nbsp;по&nbsp;нашим расчётам он&nbsp;должен отнять 5–10&nbsp;минут у&nbsp;наших пользователей. Опрос проходил онлайн с&nbsp;помощью Yandex Forms. <a href="https://forms.yandex.ru/cloud/6852d142eb614671e50eb842" target="_blank" rel="noopener">Здесь</a> можно посмотреть копию этого опроса <span class="muted">(для&nbsp;удобства все поля сделаны необязательными)</span>.</p>
+          <p>Всего в&nbsp;опросе приняли участие 28&nbsp;респондентов. Ими были коллеги из&nbsp;разных редакций, которые в&nbsp;разной степени используют сервис.</p>
+          <p>Все ответы мы&nbsp;собрали в&nbsp;одну наглядную таблицу. Ниже я&nbsp;показала часть этой таблицы для&nbsp;10&nbsp;респондентов, по&nbsp;которым можно судить о&nbsp;результатах в&nbsp;среднем.</p>
+        </div>
+        <div class="survey commented case-bleed" data-reveal><picture><source type="image/avif" srcset="/images/cases/testo-research/survey-800.avif 800w, /images/cases/testo-research/survey-1600.avif 1600w, /images/cases/testo-research/survey-2400.avif 2400w" sizes="100vw" /><source type="image/webp" srcset="/images/cases/testo-research/survey-800.webp 800w, /images/cases/testo-research/survey-1600.webp 1600w, /images/cases/testo-research/survey-2400.webp 2400w" sizes="100vw" /><img src="/images/cases/testo-research/survey-1600.jpg" srcset="/images/cases/testo-research/survey-800.jpg 800w, /images/cases/testo-research/survey-1600.jpg 1600w, /images/cases/testo-research/survey-2400.jpg 2400w" sizes="100vw" width="5760" height="6453" alt="Таблица ответов 10 респондентов на 15 вопросов опроса" loading="lazy" decoding="async" /></picture>
+            <button class="comment" type="button" aria-expanded="false" style="left: 49.24%; top: 59.29%"><img class="comment__avatar" src="/images/photo/avatar-comment.png" width="40" height="40" alt="" /><span class="comment__body"><span class="comment__name">Комментарий №1</span><span class="comment__text">«Это, скорее, не&nbsp;трудность, а&nbsp;пожелание&nbsp;— было бы&nbsp;здорово, чтобы сохранялась история заполнения заголовка и&nbsp;подзаголовка, чтобы не&nbsp;приходилось вбивать несколько одинаковых текстов вручную»</span></span></button>
+            <button class="comment" type="button" aria-expanded="false" style="left: 49.24%; top: 69.90%"><img class="comment__avatar" src="/images/photo/avatar-comment.png" width="40" height="40" alt="" /><span class="comment__body"><span class="comment__name">Комментарий №2</span><span class="comment__text">«Нельзя убрать привязку ответа к&nbsp;результату весом +1&nbsp;— если, например, сделал это по&nbsp;ошибке и&nbsp;хочется отменить действие»</span></span></button>
+            <button class="comment" type="button" aria-expanded="false" style="left: 42.36%; top: 80.43%"><img class="comment__avatar" src="/images/photo/avatar-comment.png" width="40" height="40" alt="" /><span class="comment__body"><span class="comment__name">Комментарий №3</span><span class="comment__text">«Автоматическое кадрирование изображения (сейчас встаёт странно иллюстрация не&nbsp;того формата), возможность вручную откадрировать картинку сразу при&nbsp;загрузке»</span></span></button>
+            <button class="comment" type="button" aria-expanded="false" style="left: 69.24%; top: 80.43%"><img class="comment__avatar" src="/images/photo/avatar-comment.png" width="40" height="40" alt="" /><span class="comment__body"><span class="comment__name">Комментарий №4</span><span class="comment__text">«Хочется обрезать картинки сразу при&nbsp;загрузке»</span></span></button>
+            <button class="comment" type="button" aria-expanded="false" style="left: 42.36%; top: 88.87%"><img class="comment__avatar" src="/images/photo/avatar-comment.png" width="40" height="40" alt="" /><span class="comment__body"><span class="comment__name">Комментарий №5</span><span class="comment__text">«Было бы&nbsp;очень удобно добавить автоматическое заполнение не&nbsp;только всех подзаголовков, но&nbsp;и&nbsp;заголовков и&nbsp;подписей к&nbsp;картинкам. Но&nbsp;с&nbsp;возможностью изменить нужную подпись»</span></span></button>
+            <button class="comment" type="button" aria-expanded="false" style="left: 55.97%; top: 88.87%"><img class="comment__avatar" src="/images/photo/avatar-comment.png" width="40" height="40" alt="" /><span class="comment__body"><span class="comment__name">Комментарий №6</span><span class="comment__text">«Продумать более логичное выставление баллов в&nbsp;Тестах. Добавить возможность получения результата не&nbsp;на&nbsp;основе общего арифметического, а&nbsp;на&nbsp;основе выбранных диапазонов. Например, человек выбрал больше ответов под&nbsp;цифрой "5", значит его результат совпадает с&nbsp;цифрой "5"»</span></span></button>
+            <button class="comment" type="button" aria-expanded="false" style="left: 62.85%; top: 88.87%"><img class="comment__avatar" src="/images/photo/avatar-comment.png" width="40" height="40" alt="" /><span class="comment__body"><span class="comment__name">Комментарий №7</span><span class="comment__text">«Бывает загружаются изображения не&nbsp;с&nbsp;первого раза, подпись к&nbsp;изображениям до&nbsp;100&nbsp;символов, приходится сокращать»</span></span></button>
+            <button class="comment" type="button" aria-expanded="false" style="left: 76.60%; top: 88.87%"><img class="comment__avatar" src="/images/photo/avatar-comment.png" width="40" height="40" alt="" /><span class="comment__body"><span class="comment__name">Комментарий №8</span><span class="comment__text">«Картинки к&nbsp;кроссвордам (к&nbsp;вопросам), кроп картинок прям в&nbsp;сервисе»</span></span></button>
+        </div>
+        <div class="case-text case-col" data-reveal>
+          <p>Мы&nbsp;оценили критичность комментариев респондентов с&nbsp;точки зрения влияния на&nbsp;прохождение сценария.</p>
+        </div>
+        <div class="panel case-col" data-reveal><ul class="legend" role="list">
+            <li><span class="pin pin--red">1</span>Критические замечания&nbsp;— то, что&nbsp;может повлиять на&nbsp;прохождение сценария</li>
+            <li><span class="pin pin--yellow">1</span>Некритические замечания&nbsp;— то, что&nbsp;не&nbsp;влияет на&nbsp;прохождение сценария</li>
+            <li><span class="pin pin--grey">1</span>Дополнительные фичи</li>
+          </ul></div>
+        <div class="case-text case-col" data-reveal>
+          <p>И&nbsp;собрали комментарии в&nbsp;отдельную таблицу, в&nbsp;которой с&nbsp;командой предлагали варианты решения. Ниже я&nbsp;показала часть этой таблицы для&nbsp;8&nbsp;комментариев.</p>
+        </div>
+        <div class="cmt-table case-wide" data-reveal><table>
+            <thead><tr><th scope="col">#</th><th scope="col">Комментарий респондента</th><th scope="col">Как можно исправить</th></tr></thead>
+            <tbody><tr><td><span class="pin pin--yellow">1</span></td><td>«Это, скорее, не&nbsp;трудность, а&nbsp;пожелание&nbsp;— было бы&nbsp;здорово, чтобы сохранялась история заполнения заголовка и&nbsp;подзаголовка, чтобы не&nbsp;приходилось вбивать несколько одинаковых текстов вручную»</td><td>Добавить автозаполнение с&nbsp;редактированием или возможность применять значение поля к&nbsp;другим полям</td></tr><tr><td><span class="pin pin--red">2</span></td><td>«Нельзя убрать привязку ответа к&nbsp;результату весом +1&nbsp;— если, например, сделал это по&nbsp;ошибке и&nbsp;хочется отменить действие»</td><td>Добавить в&nbsp;выпадающий список вариант «Не&nbsp;выбрано»</td></tr><tr><td><span class="pin pin--yellow">3</span></td><td>«Автоматическое кадрирование изображения (сейчас встаёт странно иллюстрация не&nbsp;того формата), возможность вручную откадрировать картинку сразу при&nbsp;загрузке»</td><td>Добавить редактор изображений</td></tr><tr><td><span class="pin pin--yellow">4</span></td><td>«Хочется обрезать картинки сразу при&nbsp;загрузке»</td><td>Добавить редактор изображений</td></tr><tr><td><span class="pin pin--yellow">5</span></td><td>«Было бы&nbsp;очень удобно добавить автоматическое заполнение не&nbsp;только всех подзаголовков, но&nbsp;и&nbsp;заголовков и&nbsp;подписей к&nbsp;картинкам. Но&nbsp;с&nbsp;возможностью изменить нужную подпись»</td><td>Добавить автозаполнение с&nbsp;редактированием или возможность применять значение поля к&nbsp;другим полям</td></tr><tr><td><span class="pin pin--grey">6</span></td><td>«Продумать более логичное выставление баллов в&nbsp;Тестах. Добавить возможность получения результата не&nbsp;на&nbsp;основе общего арифметического, а&nbsp;на&nbsp;основе выбранных диапазонов. Например, человек выбрал больше ответов под&nbsp;цифрой "5", значит его результат совпадает с&nbsp;цифрой "5"»</td><td>Подумать над&nbsp;логикой расстановки баллов</td></tr><tr><td><span class="pin pin--yellow">7</span></td><td>«Бывает загружаются изображения не&nbsp;с&nbsp;первого раза, подпись к&nbsp;изображениям до&nbsp;100&nbsp;символов, приходится сокращать»</td><td>Увеличить количество символов в&nbsp;подписях к&nbsp;медиа. На&nbsp;стороне разработки: пофиксить ошибку при&nbsp;загрузке медиафайлов (ошибка выполнения запроса 400)</td></tr><tr><td><span class="pin pin--grey">8</span></td><td>«Картинки к&nbsp;кроссвордам (к&nbsp;вопросам), кроп картинок прям в&nbsp;сервисе»</td><td>Добавить функционал изображений в&nbsp;админке и&nbsp;в&nbsp;виджете. Добавить редактор изображений</td></tr></tbody>
+          </table></div>
+      </section>
+
+      <section class="case-section">
+        <h2 class="case-col" data-reveal>Доработки</h2>
+        <div class="case-text case-col" data-reveal>
+          <p>2&nbsp;гипотезы полностью подтвердились, 1&nbsp;гипотеза подтвердилась частично:</p>
+        </div>
+        <div class="panel case-wide" data-reveal><div class="pairs pairs--divided">
+            <div class="pair"><img class="pair__star" src="/images/icons/soft-star.svg" width="20" height="20" alt="" /><p class="pair__title">Гипотеза №1</p><p class="pair__text">Если добавим редактор изображений, то&nbsp;скорость работы повысится и&nbsp;работа с&nbsp;изображениями станет удобнее</p></div>
+            <div class="pair"><img class="pair__star" src="/images/icons/soft-star.svg" width="20" height="20" alt="" /><p class="pair__title">Подтвердилась</p><p class="pair__text">Половина пользователей указала на&nbsp;нехватку функции кадрирования изображения <span class="muted">(вопрос №&nbsp;12 и&nbsp;комментарии)</span></p></div>
+            <div class="pair"><img class="pair__star" src="/images/icons/soft-star.svg" width="20" height="20" alt="" /><p class="pair__title">Гипотеза №2</p><p class="pair__text">Если добавим автозаполнение минимального балла (с&nbsp;возможностью редактирования), то&nbsp;у&nbsp;юзеров будет меньше путаницы</p></div>
+            <div class="pair"><img class="pair__star" src="/images/icons/soft-star.svg" width="20" height="20" alt="" /><p class="pair__title">Частично подтвердилась</p><p class="pair__text">По&nbsp;опросу мы&nbsp;видим, что&nbsp;часть пользователей не&nbsp;понимает как расставлять баллы <span class="muted">(вопрос №&nbsp;3)</span></p></div>
+            <div class="pair"><img class="pair__star" src="/images/icons/soft-star.svg" width="20" height="20" alt="" /><p class="pair__title">Гипотеза №3</p><p class="pair__text">Если мы&nbsp;добавим возможность применять контент полей «Подзаголовок» и&nbsp;«Медиа» ко&nbsp;всем промежуточным результатам, то&nbsp;уменьшится время на&nbsp;заполнение квиза контентом</p></div>
+            <div class="pair"><img class="pair__star" src="/images/icons/soft-star.svg" width="20" height="20" alt="" /><p class="pair__title">Подтвердилась</p><p class="pair__text">Около 40% пользователей сообщили о&nbsp;негативном опыте, что&nbsp;приходится вбивать несколько одинаковых текстов вручную <span class="muted">(вопрос №&nbsp;13 и&nbsp;комментарии)</span></p></div>
+          </div></div>
+        <div class="case-text case-col" data-reveal>
+          <p>Обсудили с&nbsp;командой разработки всю полученную из&nbsp;Вебвизора и&nbsp;опроса информацию. Расставили приоритеты: на&nbsp;первоначальном этапе у&nbsp;команды есть ресурсы на&nbsp;следующие доработки:</p>
+        </div>
+        <div class="panel panel--lavender case-col" data-reveal><div class="terms">
+            <div><p class="term__title">Гипотеза №1</p><p class="term__text">Проектируем редактор изображений</p></div>
+            <div><p class="term__title">Гипотеза №2</p><p class="term__text">Добавляем автозаполнение минимального балла (с&nbsp;возможностью редактирования)</p></div>
+            <div><p class="term__title">Критические замечания</p><p class="term__text">Добавляем в&nbsp;выпадающий список в&nbsp;расширенном тесте вариант «Не&nbsp;выбрано»</p></div>
+            <div><p class="term__title">Некритические замечания</p><p class="term__text">Увеличиваем количество символов в&nbsp;подписях к&nbsp;медиа</p></div>
+            <div><p class="term__title">Ошибки</p><p class="term__text">Фиксим ошибку загрузки медиафайлов (ошибка выполнения запроса 400)</p></div>
+            <div><p class="term__title">Доработка виджета</p><p class="term__text">Добавляем кнопку «Поделиться» в&nbsp;виджет в&nbsp;конце прохождения интерактива</p></div>
+          </div></div>
+        <div class="case-text case-col" data-reveal>
+          <p>Остальное оставили на&nbsp;будущее. Это хорошие точки роста, но&nbsp;на&nbsp;данный момент нет ресурса на&nbsp;их&nbsp;реализацию.</p>
+        </div>
+        <div class="panel case-col" data-reveal><div class="terms">
+            <div><p class="term__title">Гипотеза №3</p><p class="term__text">Сложная доработка, в&nbsp;которой, вероятно, придётся переписать логику в&nbsp;квизах</p></div>
+            <div><p class="term__title">Работа с&nbsp;изображениями</p><p class="term__text">«Хочется иметь возможность закинуть в&nbsp;интерактив сразу все изображения, которые будут использоваться, и&nbsp;уже потом выбирать их&nbsp;при&nbsp;заполнении контента»&nbsp;— инсайт от&nbsp;пользователей</p></div>
+            <div><p class="term__title">Шаблоны</p><p class="term__text">«Хочется другие цветовые шаблоны для&nbsp;тестов, квизов, голосований (например, светлую тему как у&nbsp;кроссвордов)»&nbsp;— инсайт от&nbsp;пользователей</p></div>
+          </div></div>
+        <div class="case-text case-col" data-reveal>
+          <p>Поняли, что&nbsp;из&nbsp;функционала пользователи не&nbsp;используют или используют мало: кнопку копирования ссылки на&nbsp;карточке интерактива, отображение даты создания и&nbsp;изменения на&nbsp;карточке интерактива, расширенный тест.</p>
+          <p>Наиболее используемый фильтр «Сотрудник», но&nbsp;около 70% пользователей вообще их&nbsp;не&nbsp;использует.</p>
+          <p>В&nbsp;будущем при&nbsp;необходимости это можно будет либо переосмыслить, либо отказаться вовсе.</p>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <h2 class="case-col" data-reveal>Итоговый дизайн</h2>
+        <div class="case-text case-col" data-reveal>
+          <p>А&nbsp;здесь я&nbsp;просто всё покажу.</p>
+          <p>Спроектировали редактор изображений, который позволит кропать изображения сразу в&nbsp;сервисе под&nbsp;необходимый формат.</p>
+        </div>
+        <div class="video-card case-wide" data-reveal><video data-autoplay muted loop playsinline preload="none" poster="/images/cases/testo-research/poster-testo-research-1.jpg"><source src="/video/testo-research-1.mp4" type="video/mp4" /></video></div>
+        <div class="case-text case-col" data-reveal>
+          <p>Добавили автозаполнение минимального балла на&nbsp;вкладке «Результаты» (с&nbsp;возможностью редактирования). Так пользователям будет проще задавать диапазоны.</p>
+        </div>
+        <div class="video-card case-wide" data-reveal><video data-autoplay muted loop playsinline preload="none" poster="/images/cases/testo-research/poster-testo-research-2.jpg"><source src="/video/testo-research-2.mp4" type="video/mp4" /></video></div>
+        <div class="case-text case-col" data-reveal>
+          <p>Добавили на&nbsp;экран результатов возможность поделиться результатами, чтобы побудить пользователей делиться ими.</p>
+        </div>
+        <div class="media-narrow case-col" data-reveal><picture><source type="image/avif" srcset="/images/cases/testo-research/share-800.avif 800w, /images/cases/testo-research/share-1600.avif 1600w, /images/cases/testo-research/share-2400.avif 1760w" sizes="(min-width: 718px) 670px, calc(100vw - 48px)" /><source type="image/webp" srcset="/images/cases/testo-research/share-800.webp 800w, /images/cases/testo-research/share-1600.webp 1600w, /images/cases/testo-research/share-2400.webp 1760w" sizes="(min-width: 718px) 670px, calc(100vw - 48px)" /><img src="/images/cases/testo-research/share-1600.jpg" srcset="/images/cases/testo-research/share-800.jpg 800w, /images/cases/testo-research/share-1600.jpg 1600w, /images/cases/testo-research/share-2400.jpg 1760w" sizes="(min-width: 718px) 670px, calc(100vw - 48px)" width="1760" height="1734" alt="Экран результата теста с кнопками «Поделиться»" loading="lazy" decoding="async" /></picture></div>
+      </section>
+
+      <section class="case-section">
+        <h2 class="case-col" data-reveal>Итоги</h2>
+        <div class="case-text case-col" data-reveal>
+          <p>В&nbsp;результате исследования мы:</p>
+        </div>
+        <div class="panel case-col" data-reveal><div class="terms">
+            <div><p class="term__title">Выявили поведенческие паттерны</p><p class="term__text">Сколько времени занимает создание и&nbsp;публикация интерактива, на&nbsp;каких этапах возникают трудности, какие функции используются активно, а&nbsp;какие&nbsp;— игнорируются</p></div>
+            <div><p class="term__title">Подтвердили 2&nbsp;из&nbsp;3&nbsp;гипотез</p><p class="term__text">Третья гипотеза подтвердилась частично</p></div>
+            <div><p class="term__title">Провели доработки</p><p class="term__text">Они направлены на&nbsp;улучшение ключевых пользовательских сценариев</p></div>
+            <div><p class="term__title">Получили оценку удовлетворенности пользователей</p><p class="term__text">4,5&nbsp;из&nbsp;5&nbsp;баллов. Планируем повторить опрос через год, чтобы замерить динамику после внедрённых изменений</p></div>
+            <div><p class="term__title">Сформировали бэклог улучшений</p><p class="term__text">Часть из&nbsp;них уже в&nbsp;работе у&nbsp;команды разработки</p></div>
+            <div><p class="term__title">Добавили новые точки взаимодействия</p><p class="term__text">Возможность делиться результатами интерактива&nbsp;— это стало одним из&nbsp;способов повышения вовлечённости</p></div>
+          </div></div>
+        <div class="case-text case-col" data-reveal>
+          <p>После доработок снизилась частота обращений в&nbsp;поддержку с&nbsp;типовыми вопросами.</p>
+          <p>Прошло мало времени и&nbsp;количественных метрик ещё нет. Мы&nbsp;планируем отслеживать динамику по&nbsp;основным метрикам: скорость выполнения ключевых сценариев, повторные визиты, количество обращений в&nbsp;поддержку и&nbsp;оценка удовлетворенности пользователей.</p>
+        </div>
+      </section>
+      </div>
+    </article>
+
+    <section class="next-cases" aria-labelledby="next-title">
+      <div class="case-wide">
+        <h2 class="next-cases__title t-36" id="next-title" data-reveal>Тоже мои кейсы</h2>
+        <div class="next-cases__grid">
+          <a class="mini-card" href="/testo/" data-reveal data-reveal-delay="0">
+  <div class="mini-card__media">
+    <picture>
+      <source type="image/avif" srcset="/images/covers/testo-720.avif" />
+      <source type="image/webp" srcset="/images/covers/testo-720.webp" />
+      <img src="/images/covers/testo-720.jpg" width="720" height="420" alt="" loading="lazy" decoding="async" />
+    </picture>
+  </div>
+  <div class="mini-card__body">
+    <div class="mini-card__txt">
+      <div class="mini-card__tags"><span class="tag">Продуктовый дизайн</span></div>
+      <div class="mini-card__desc">
+        <p class="mini-card__title t-20">Сервис интерактивов Testo</p>
+        <p>Спроектировала продукт от&nbsp;первоначальной концепции до&nbsp;запуска. Сейчас развиваем сервис: исследуем и&nbsp;решаем проблемы пользователей</p>
+        <p><strong>Результат:</strong> +7,8% к&nbsp;времени сессии, +41,1% к&nbsp;просмотрам, +10,1% к&nbsp;глубине просмотра.</p>
+      </div>
+    </div>
+    <span class="btn btn--tertiary">Читать целиком<img class="btn__icon" src="/images/icons/arrow-right.svg" width="10" height="10" alt="" /></span>
+  </div>
+</a>
+
+          <a class="mini-card" href="/super/" data-reveal data-reveal-delay="0.1">
+  <div class="mini-card__media">
+    <picture>
+      <source type="image/avif" srcset="/images/covers/super-720.avif" />
+      <source type="image/webp" srcset="/images/covers/super-720.webp" />
+      <img src="/images/covers/super-720.jpg" width="720" height="420" alt="" loading="lazy" decoding="async" />
+    </picture>
+  </div>
+  <div class="mini-card__body">
+    <div class="mini-card__txt">
+      <div class="mini-card__tags"><span class="tag">Ui-kit</span></div>
+      <div class="mini-card__desc">
+        <p class="mini-card__title t-20">Super Design Kit</p>
+        <p>Разработала и&nbsp;развиваю UI-кит, который структурировал всю админку и&nbsp;помогает быстрее реализовывать фичи</p>
+        <p><strong>Результат:</strong> ускорение реализации новых фич.</p>
+      </div>
+    </div>
+    <span class="btn btn--tertiary">Читать целиком<img class="btn__icon" src="/images/icons/arrow-right.svg" width="10" height="10" alt="" /></span>
+  </div>
+</a>
+
+          <a class="mini-card" href="/u-tv/" data-reveal data-reveal-delay="0.2">
+  <div class="mini-card__media">
+    <picture>
+      <source type="image/avif" srcset="/images/covers/u-tv-720.avif" />
+      <source type="image/webp" srcset="/images/covers/u-tv-720.webp" />
+      <img src="/images/covers/u-tv-720.jpg" width="720" height="420" alt="" loading="lazy" decoding="async" />
+    </picture>
+  </div>
+  <div class="mini-card__body">
+    <div class="mini-card__txt">
+      <div class="mini-card__tags"><span class="tag">Редизайн</span></div>
+      <div class="mini-card__desc">
+        <p class="mini-card__title t-20">Сайт телеканала «Ю»</p>
+        <p>Спроектировала новый удобный плеер и&nbsp;телепрограмму на&nbsp;сайте и&nbsp;обновила устаревший визуал</p>
+        <p><strong>Результат:</strong> до&nbsp;+31,3% уников и&nbsp;до&nbsp;+9,5% к&nbsp;просмотрам видео.</p>
+      </div>
+    </div>
+    <span class="btn btn--tertiary">Читать целиком<img class="btn__icon" src="/images/icons/arrow-right.svg" width="10" height="10" alt="" /></span>
+  </div>
+</a>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="contacts" aria-labelledby="contacts-title">
+  <div class="blob blob--2" aria-hidden="true">
+  <img class="blob__shape" src="/images/blobs/blob2-1.svg" alt="" />
+  <img class="blob__shape" src="/images/blobs/blob2-2.svg" alt="" />
+  <img class="blob__shape" src="/images/blobs/blob2-3.svg" alt="" />
+  <img class="blob__shape" src="/images/blobs/blob2-4.svg" alt="" />
+</div>
+
+  <div class="blob blob--1" aria-hidden="true">
+  <img class="blob__shape" src="/images/blobs/blob1-1.svg" alt="" />
+  <img class="blob__shape" src="/images/blobs/blob1-2.svg" alt="" />
+  <img class="blob__shape" src="/images/blobs/blob1-3.svg" alt="" />
+  <img class="blob__shape" src="/images/blobs/blob1-4.svg" alt="" />
+</div>
+
+  <h2 class="contacts__title t-36" id="contacts-title" data-reveal>Мои контакты</h2>
+  <div class="contact-card" data-reveal data-reveal-delay="0.1">
+    <picture>
+      <source srcset="/images/photo/avatar-320.webp" type="image/webp" />
+      <img class="contact-card__photo" src="/images/photo/avatar-320.jpg" width="120" height="120" alt="Анастасия Файзуллина" loading="lazy" />
+    </picture>
+    <div class="contact-card__txt">
+      <p class="contact-card__name mono mono-20">Анастасия Файзуллина</p>
+      <p class="contact-card__city mono mono-14">Москва</p>
+    </div>
+    <div class="contact-card__links">
+      <a class="btn btn--secondary" href="https://t.me/anastasiya_fff" target="_blank" rel="noopener">
+        Telegram
+        <img class="btn__icon" src="/images/icons/arrow-up-right.svg" width="12" height="12" alt="" />
+      </a>
+      <a class="btn btn--secondary" href="mailto:anastasiyafayzullina@gmail.com">
+        Email
+        <img class="btn__icon" src="/images/icons/arrow-up-right.svg" width="12" height="12" alt="" />
+      </a>
+    </div>
+  </div>
+</section>
+
+  <button class="btn btn--arrow to-top" type="button" aria-label="Наверх">
+  <img class="btn__icon" src="/images/icons/arrow-up.svg" width="12" height="12" alt="" />
+</button>
+
+</body>
+</html>
